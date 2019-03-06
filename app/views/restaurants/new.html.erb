@@ -1,0 +1,32 @@
+<h1>New Restaurant</h1>
+
+<%= form_for(@restaurant) do |f| %>
+
+  <div class="form-group" style="width: 400px;">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
+  </div>
+
+  <div class="form-group" style="width: 400px;">
+    <%= f.label :address %>
+    <%= f.text_field :address, class: 'form-control' %>
+  </div>
+
+  <div class="form-group" style="width: 400px;">
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number, class: 'form-control' %>
+  </div>
+
+  <div class="form-group" style="width: 400px;">
+    <%= f.label :category %>
+    <%= f.text_field :category, class: 'form-control' %>
+  </div>
+
+
+  <%= f.submit class: 'btn btn-primary' %>
+
+<% end %>
+
+</br>
+
+<%= link_to "Cancel", restaurants_path %>
